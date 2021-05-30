@@ -332,7 +332,7 @@
 %          Exemplo: Arnold Alois {}Schwarzenegger para sobrenome simples.
 \autor{Francisco Lima {}Figueiredo}%
 \newcommand\matricula{Matricula 202004137859}
-\orientador{Regina Fátima Cury {}Azevedo}%
+\orientador{Maria Alejandra Iturrieta {}Leal}%
 %\coorientador{}%
 \instituicao{Universidade Estácio de Sá}%
 
@@ -394,7 +394,7 @@
 		% Folha de rosto
 		% (o * indica que haverá a ficha bibliográfica)
 		% ---
-		\ImprimirSimOuNao[Sim]{             % Elemento Obrigatório
+		\ImprimirSimOuNao[Não]{             % Elemento Obrigatório
 			\imprimirfolhaderosto*                                                 
 		}
 		% ---
@@ -565,7 +565,7 @@
 		% ---
 		% Dedicatória
 		% ---
-		\ImprimirSimOuNao[Sim]{
+		\ImprimirSimOuNao[Não]{
 			\begin{dedicatoria}
 			   \vspace*{\fill}
 			   \centering
@@ -583,7 +583,7 @@
 		% ---
 		% Agradecimentos
 		% ---
-		\ImprimirSimOuNao[Sim]{
+		\ImprimirSimOuNao[Não]{
 			\begin{agradecimentos}
 				Os agradecimentos principais são direcionados à Gerald Weber, Miguel Frasson, Leslie H. Watter, Bruno Parente Lima, Flávio de Vasconcellos Corrêa, Otavio Real Salvador, Renato Machnievscz\footnote{Os nomes dos integrantes do primeiro projeto abn\TeX\ foram extraídos de \url{http://codigolivre.org.br/projects/abntex/}} e todos aqueles que contribuíram para que a produção de trabalhos acadêmicos conforme as normas ABNT com \LaTeX\ fosse possível.
 
@@ -599,7 +599,7 @@
 		% ---
 		% Epígrafe
 		% ---
-		\ImprimirSimOuNao[Sim]{
+		\ImprimirSimOuNao[Não]{
 			\begin{epigrafe}
 				\vspace*{\fill}
 				\hspace{.35\textwidth}
@@ -620,7 +620,7 @@
 		% ---
 		% RESUMOS
 		% ---
-		\ImprimirSimOuNao[Sim]{
+		\ImprimirSimOuNao[Não]{
 			% resumo em português
 			\setlength{\absparsep}{18pt} % ajusta o espaçamento dos parágrafos do resumo
 			\begin{resumo}
@@ -639,7 +639,7 @@
 		% ---
 		% Abstract
 		% ---
-		\ImprimirSimOuNao[Sim]{
+		\ImprimirSimOuNao[Não]{
 			% resumo em inglês
 			\begin{resumo}[Abstract]
 			 \begin{otherlanguage*}{english}
@@ -914,7 +914,7 @@
 	% ---
 	% Inicia os anexos
 	% ---
-	\ImprimirSimOuNao[Nao]{             % Elemento Opcional
+	\ImprimirSimOuNao[Não]{             % Elemento Opcional
 		\begin{anexosenv}
 
 			% Imprime uma página indicando o início dos anexos
@@ -973,7 +973,7 @@
 	%%---------------------------------------------------------------------
 	%% INDICE REMISSIVO
 	%%---------------------------------------------------------------------
-	\ImprimirSimOuNao[Nao]{             % Elemento Opcional
+	\ImprimirSimOuNao[Não]{             % Elemento Opcional
 		\phantompart
 		\printindex
 	}
