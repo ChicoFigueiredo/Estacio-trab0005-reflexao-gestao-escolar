@@ -31,7 +31,7 @@
   date   = {2006},
   title  = {Pradime : Programa de Apoio aos Dirigentes Municipais de Educação - Caderno de Textos ; v.3},
   year   = {2006},
-  editor = {MEC/SEB},
+  editor = {MEC/SEB - Ministério da Educação. Secretaria de Educação Básica},
   file   = {:PRADIME03-cader_tex_3.pdf:PDF},
 }
 
@@ -40,6 +40,7 @@
   date   = {2006},
   title  = {Pradime : Programa de Apoio aos Dirigentes Municipais de Educação - Caderno de Textos ; v.1},
   year   = {2006},
+  editor = {MEC/SEB - Ministério da Educação. Secretaria de Educação Básica},
   file   = {:PRADIME01-cader_tex_1.pdf:PDF},
 }
 
