@@ -18,12 +18,14 @@
 }
 
 @Book{PRADIME02,
-  author = {MEC/SEB},
-  date   = {2006},
-  title  = {Pradime : Programa de Apoio aos Dirigentes Municipais de Educação - Caderno de Textos ; v.2},
-  year   = {2006},
-  editor = {MEC/SEB - Ministério da Educação. Secretaria de Educação Básica},
-  file   = {:PRADIME02-cader_tex_2.pdf:PDF},
+  author  = {MEC/SEB},
+  date    = {2006},
+  title   = {Pradime : Programa de Apoio aos Dirigentes Municipais de Educação - Caderno de Textos ; v.2},
+  year    = {2006},
+  editor  = {MEC/SEB - Ministério da Educação. Secretaria de Educação Básica},
+  url     = {http://portal.mec.gov.br/seb/arquivos/pdf/Pradime/cader_tex_2.pdf},
+  urldate = {2021-05-30},
+  file    = {:PRADIME02-cader_tex_2.pdf:PDF},
 }
 
 @Book{PRADIME03,
@@ -36,12 +38,14 @@
 }
 
 @Book{PRADIME01,
-  author = {MEC/SEB - Ministério da Educação. Secretaria de Educação Básica},
-  date   = {2006},
-  title  = {Pradime : Programa de Apoio aos Dirigentes Municipais de Educação - Caderno de Textos ; v.1},
-  year   = {2006},
-  editor = {MEC/SEB - Ministério da Educação. Secretaria de Educação Básica},
-  file   = {:PRADIME01-cader_tex_1.pdf:PDF},
+  author  = {MEC/SEB},
+  date    = {2006},
+  title   = {Pradime : Programa de Apoio aos Dirigentes Municipais de Educação - Caderno de Textos ; v.1},
+  year    = {2006},
+  editor  = {MEC/SEB - Ministério da Educação. Secretaria de Educação Básica},
+  url     = {http://portal.mec.gov.br/seb/arquivos/pdf/Pradime/cader_tex_1.pdf},
+  urldate = {2021-05-30},
+  file    = {:PRADIME01-cader_tex_1.pdf:PDF},
 }
 
 @Comment{jabref-meta: databaseType:biblatex;}
