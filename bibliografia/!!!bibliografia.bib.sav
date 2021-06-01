@@ -50,11 +50,11 @@
   file    = {:PRADIME01-cader_tex_1.pdf:PDF},
 }
 
-@Book{Luck2006,
+@Book{Luck1996,
   author = {Heloisa Luck},
-  date   = {2006},
+  date   = {1996},
   title  = {A Gestão Participativa na Escola},
-  year   = {2006},
+  year   = {1996},
   editor = {Vozes},
 }
 
