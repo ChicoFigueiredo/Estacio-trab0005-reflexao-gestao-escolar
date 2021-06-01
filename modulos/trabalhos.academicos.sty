@@ -30,22 +30,22 @@
 % Capa Padrão
 % --------------------------------------------------------
 \renewcommand{\imprimircapa}{%
-  \begin{capa}%
-    \center
-
-	{\MakeTextUppercase{\ABNTEXchapterfont\large\bfseries\imprimirautor}}
-
-    \vfill
-    \begin{center}
-    {\MakeTextUppercase{\ABNTEXchapterfont\bfseries\Large\imprimirtitulo}}
-    \end{center}
-    \vfill
-
-	{\large\bfseries\imprimirlocal}
-	\par
-	{\large\bfseries\imprimirdata}
-	\vspace*{1cm}
-  \end{capa}
+	\begin{capa}%
+		\center
+		
+		{\MakeTextUppercase{\ABNTEXchapterfont\large\bfseries\imprimirautor}}
+		
+		\vfill
+		\begin{center}
+			{\MakeTextUppercase{\ABNTEXchapterfont\bfseries\Large\imprimirtitulo}}
+		\end{center}
+		\vfill
+		
+		{\large\bfseries\imprimirlocal}
+		\par
+		{\large\bfseries\imprimirdata}
+		\vspace*{1cm}
+	\end{capa}
 }
 
 % --------------------------------------------------------
@@ -64,8 +64,8 @@
 				\SingleSpacing\sffamily\large\bfseries
 				\MakeTextUppercase{\Large\bfseries\sffamily#3} \par
 		\end{minipage}}
-
-
+		
+		
 		\vspace*{\fill}
 		{\begin{minipage}[c]{20cm}
 				\flushright
@@ -82,22 +82,22 @@
 				}
 		\end{minipage}}
 		\flushright
-
-
+		
+		
 		\vspace*{\fill}
 		{\begin{minipage}[c]{\textwidth}
 				\center
 				{\MakeTextUppercase{\large\sffamily\imprimirautor}}
 		\end{minipage}}
-
+		
 		\vspace*{\fill}
-
+		
 		{\begin{minipage}[c]{\textwidth}
 				\center
 				{\MakeTextUppercase{\sffamily\imprimirlocal, \imprimirdata}}
 		\end{minipage}}
-
-
+		
+		
 	\end{capa}
 }
 
@@ -125,6 +125,13 @@
 }
 
 % --------------------------------------------------------
+% Capa Padrão UDESC - TCC
+% --------------------------------------------------------
+\newcommand{\imprimircapaPCC}{%
+	\imprimirCapaCustom{CapaAzulUDESC}{Prática como Componente Curricular}{\imprimirinstituicao}
+}
+
+% --------------------------------------------------------
 % Capa Padrão UDESC - Pós-Doc
 % --------------------------------------------------------
 \newcommand{\imprimircapaPosDoc}{%
@@ -146,36 +153,36 @@
 \makeatletter
 
 \renewcommand{\folhaderostocontent}{
-    \begin{center}
-
-    {\MakeTextUppercase{\ABNTEXchapterfont\large\imprimirautor}}\\
-    {\MakeTextUppercase{\ABNTEXchapterfont\large\matricula}}
-
-    \vspace*{\fill}\vspace*{\fill}
-
-    {\MakeTextUppercase{\ABNTEXchapterfont\bfseries\large\imprimirtitulo}}
-
-    \vspace*{\fill}
-
-    \abntex@ifnotempty{\imprimirpreambulo}{%
-      \hspace{.45\textwidth}
-      {\begin{minipage}{.52\textwidth}
-      	\SingleSpacing
-      	\imprimirpreambulo\par
-      	\vspace*{8pt}
-      	{\imprimirorientadorRotulo~\imprimirorientador\par}
-      	\abntex@ifnotempty{\imprimircoorientador}{%
-      	{\imprimircoorientadorRotulo~\imprimircoorientador}%
-    	}%
-      \end{minipage}}%
-    }%
-    \vspace*{\fill}\vspace*{\fill}
-
-    {\large\bfseries\imprimirlocal}
-    \par
-    {\large\bfseries\imprimirdata}
-    \vspace*{2cm}
-    \end{center}
+	\begin{center}
+		
+		{\MakeTextUppercase{\ABNTEXchapterfont\large\imprimirautor}}\\
+		{\MakeTextUppercase{\ABNTEXchapterfont\large\matricula}}
+		
+		\vspace*{\fill}\vspace*{\fill}
+		
+		{\MakeTextUppercase{\ABNTEXchapterfont\bfseries\large\imprimirtitulo}}
+		
+		\vspace*{\fill}
+		
+		\abntex@ifnotempty{\imprimirpreambulo}{%
+			\hspace{.45\textwidth}
+			{\begin{minipage}{.52\textwidth}
+					\SingleSpacing
+					\imprimirpreambulo\par
+					\vspace*{8pt}
+					{\imprimirorientadorRotulo~\imprimirorientador\par}
+					\abntex@ifnotempty{\imprimircoorientador}{%
+						{\imprimircoorientadorRotulo~\imprimircoorientador}%
+					}%
+			\end{minipage}}%
+		}%
+		\vspace*{\fill}\vspace*{\fill}
+		
+		{\large\bfseries\imprimirlocal}
+		\par
+		{\large\bfseries\imprimirdata}
+		\vspace*{2cm}
+	\end{center}
 }
 
 
@@ -233,16 +240,16 @@
 
 \let\oldcontentsline\contentsline
 \def\contentsline#1#2{%
-  \expandafter\ifx\csname l@#1\endcsname\l@section
-    \expandafter\@firstoftwo
-  \else
-    \expandafter\@secondoftwo
-  \fi
-  {%
-    \oldcontentsline{#1}{\MakeTextUppercase{#2}}%
-  }{%
-    \oldcontentsline{#1}{#2}%
-  }%
+	\expandafter\ifx\csname l@#1\endcsname\l@section
+	\expandafter\@firstoftwo
+	\else
+	\expandafter\@secondoftwo
+	\fi
+	{%
+		\oldcontentsline{#1}{\MakeTextUppercase{#2}}%
+	}{%
+		\oldcontentsline{#1}{#2}%
+	}%
 }
 
 
@@ -259,7 +266,7 @@
 
 % Comando para inverter sobrenome e nome
 \newcommand{\invertname}[1]{%
-  \StrBehind{#1}{{}}, \StrBefore{#1}{{}}%
+	\StrBehind{#1}{{}}, \StrBefore{#1}{{}}%
 }
 
 
@@ -269,19 +276,19 @@
 
 % Define o comando \fonte que respeita as configurações de caption do memoir ou do caption
 \renewcommand{\fonte}[2][\fontename]{%
-  \M@gettitle{#2}%
-  \memlegendinfo{#2}%
-  \par
-  \begingroup
-     \@parboxrestore
-     \if@minipage
-       \@setminipage
-     \fi
-     \ABNTEXfontereduzida
-     \configureseparator
-     \captiondelim{\ABNTEXcaptionfontedelim}
-     \@makecaption{#1}{\ignorespaces #2}\par
-  \endgroup}
+	\M@gettitle{#2}%
+	\memlegendinfo{#2}%
+	\par
+	\begingroup
+	\@parboxrestore
+	\if@minipage
+	\@setminipage
+	\fi
+	\ABNTEXfontereduzida
+	\configureseparator
+	\captiondelim{\ABNTEXcaptionfontedelim}
+	\@makecaption{#1}{\ignorespaces #2}\par
+	\endgroup}
 
 
 \captionstyle[\raggedright]{\raggedright}
